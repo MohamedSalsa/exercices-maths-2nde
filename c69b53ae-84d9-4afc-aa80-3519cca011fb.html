@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)blob:https://www.kimi.com/c69b53ae-84d9-4afc-aa80-3519cca011fb -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Série d'exercices – Mathématiques 2nde</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  body { font-family: 'Georgia', serif; max-width: 800px; margin: 0 auto; padding: 40px; color: #222; line-height: 1.7; }
+  h1 { text-align: center; color: #1a5276; border-bottom: 3px solid #1a5276; padding-bottom: 15px; margin-bottom: 30px; }
+  h2 { color: #1a5276; font-size: 1.2em; margin-top: 35px; border-left: 5px solid #3498db; padding-left: 12px; }
+  .difficulte { color: #e74c3c; font-weight: bold; font-size: 0.9em; }
+  .enonce { background: #f8f9fa; padding: 15px 20px; border-radius: 8px; margin: 10px 0; border-left: 4px solid #3498db; }
+  .correction { background: #e8f6e8; padding: 15px 20px; border-radius: 8px; margin: 10px 0 25px 0; border-left: 4px solid #27ae60; display: none; }
+  .correction.visible { display: block; }
+  .correction-title { color: #27ae60; font-weight: bold; margin-bottom: 8px; }
+  pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 0.95em; }
+  .toggle-btn { background: #27ae60; color: white; border: none; padding: 6px 14px; border-radius: 4px; cursor: pointer; font-size: 0.85em; margin-top: 5px; }
+  .toggle-btn:hover { background: #219a52; }
+  .separator { border: none; border-top: 1px dashed #ccc; margin: 30px 0; }
+  .footer { text-align: center; color: #888; font-size: 0.85em; margin-top: 50px; }
+</style>
+<!--<base target="_blank">--><base href="." target="_blank">
+</head>
+<body>
+<h1>📐 Série d'exercices de mathématiques<br><small>Niveau Seconde</small></h1>
+
+<div style="text-align:center; color:#666; margin-bottom:30px;">
+10 exercices couvrant le programme de Seconde — Calcul littéral, Équations, Fonctions, Statistiques, Géométrie, Proportionnalité, Algorithmique, Trigonométrie
+</div>
+
+<h2>Exercice 1 : Calcul littéral – Développement et factorisation <span class="difficulte">★☆☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>1) Développer et réduire : A = (2x - 3)(x + 5) - (x - 2)²
+2) Factoriser : B = 9x² - 25 + (3x - 5)(x + 1)</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(1)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-1">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> A = (2x - 3)(x + 5) - (x - 2)²
+   = 2x² + 10x - 3x - 15 - (x² - 4x + 4)
+   = 2x² + 7x - 15 - x² + 4x - 4
+   = x² + 11x - 19</pre>
+  <pre><strong>2)</strong> B = 9x² - 25 + (3x - 5)(x + 1)
+   = (3x - 5)(3x + 5) + (3x - 5)(x + 1)
+   = (3x - 5)[(3x + 5) + (x + 1)]
+   = (3x - 5)(4x + 6)
+   = 2(3x - 5)(2x + 3)</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 2 : Équations et inéquations <span class="difficulte">★☆☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>1) Résoudre dans ℝ : 3(x - 2) - 2(1 - x) = 5x + 1
+2) Résoudre dans ℝ : (2x + 1)/(x - 3) ≤ 0
+3) Résoudre dans ℝ : x² - 5x + 6 = 0</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(2)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-2">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> 3(x - 2) - 2(1 - x) = 5x + 1
+3x - 6 - 2 + 2x = 5x + 1
+5x - 8 = 5x + 1
+-8 = 1 → Impossible. S = ∅</pre>
+  <pre><strong>2)</strong> (2x + 1)/(x - 3) ≤ 0
+Signe de 2x + 1 : négatif sur ]-∞; -1/2], positif sur [-1/2; +∞[
+Signe de x - 3 : négatif sur ]-∞; 3[, positif sur ]3; +∞[
+Tableau de signes : solution S = [-1/2; 3[</pre>
+  <pre><strong>3)</strong> x² - 5x + 6 = 0
+Δ = 25 - 24 = 1
+x₁ = (5 - 1)/2 = 2, x₂ = (5 + 1)/2 = 3
+S = {2; 3}</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 3 : Fonctions affines et linéaires <span class="difficulte">★★☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>Soit f la fonction affine définie par f(x) = -2x + 4.
+1) Déterminer l'image de 3 par f.
+2) Déterminer l'antécédent de 0 par f.
+3) Tracer la droite représentative de f dans un repère.
+4) Déterminer algébriquement les coordonnées du point d'intersection de la droite avec l'axe des abscisses.</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(3)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-3">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> f(3) = -2 × 3 + 4 = -6 + 4 = -2. L'image de 3 est -2.</pre>
+  <pre><strong>2)</strong> On cherche x tel que f(x) = 0 : -2x + 4 = 0 → x = 2. L'antécédent de 0 est 2.</pre>
+  <pre><strong>3)</strong> La droite passe par A(0; 4) et B(2; 0). Coefficient directeur = -2.</pre>
+  <pre><strong>4)</strong> Intersection avec l'axe des abscisses : y = 0
+-2x + 4 = 0 → x = 2. Le point d'intersection est (2; 0).</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 4 : Statistiques – Moyenne et écart-type <span class="difficulte">★★☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>Les notes obtenues par 10 élèves à un contrôle sont : 8, 12, 15, 10, 7, 14, 11, 9, 13, 16.
+1) Calculer la moyenne de cette série.
+2) Calculer l'écart-type (arrondi au dixième).
+3) Déterminer le pourcentage d'élèves ayant une note supérieure ou égale à la moyenne.</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(4)">👁️ Afficher / Masquer la correction</button>
+<div class="correction visible" id="corr-4">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> Moyenne = (8+12+15+10+7+14+11+9+13+16)/10 = 115/10 = 11,5</pre>
+  <pre><strong>2)</strong> Variance = [(8-11,5)² + (12-11,5)² + ... + (16-11,5)²]/10
+= [12,25 + 0,25 + 12,25 + 2,25 + 20,25 + 6,25 + 0,25 + 6,25 + 2,25 + 20,25]/10
+= 82,5/10 = 8,25
+Écart-type = √8,25 ≈ 2,9</pre>
+  <pre><strong>3)</strong> Notes ≥ 11,5 : 12, 15, 14, 13, 16 → 5 élèves sur 10
+Pourcentage = 50%</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 5 : Géométrie dans le plan – Vecteurs <span class="difficulte">★★☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>Dans un repère orthonormé, on donne les points A(2; 3), B(5; 1) et C(-1; 4).
+1) Calculer les coordonnées du vecteur AB.
+2) Calculer la longueur AB.
+3) Déterminer les coordonnées du point D tel que ABCD soit un parallélogramme.</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(5)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-5">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> AB = (xB - xA; yB - yA) = (5-2; 1-3) = (3; -2)</pre>
+  <pre><strong>2)</strong> AB = √(3² + (-2)²) = √(9 + 4) = √13</pre>
+  <pre><strong>3)</strong> ABCD parallélogramme ⇔ AB = DC
+(3; -2) = (-1 - xD; 4 - yD)
+-1 - xD = 3 → xD = -4
+4 - yD = -2 → yD = 6
+D(-4; 6)</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 6 : Proportionnalité et pourcentages <span class="difficulte">★☆☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>Un article coûte 80 €. Son prix augmente de 15%, puis diminue de 20% lors des soldes.
+1) Calculer le prix après la première augmentation.
+2) Calculer le prix final après la baisse.
+3) Quel est le pourcentage d'évolution global entre le prix initial et le prix final ?</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(6)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-6">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> Prix après augmentation = 80 × 1,15 = 92 €</pre>
+  <pre><strong>2)</strong> Prix final = 92 × 0,80 = 73,60 €</pre>
+  <pre><strong>3)</strong> Coefficient global = 1,15 × 0,80 = 0,92
+Évolution = (0,92 - 1) × 100 = -8%
+Le prix a baissé de 8% au total.</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 7 : Fonction de référence – Carré et inverse <span class="difficulte">★★☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>On considère les fonctions f(x) = x² et g(x) = 1/x définies sur ℝ* (pour g).
+1) Compléter le tableau de variations de f sur [-3; 3].
+2) Résoudre f(x) = g(x) dans ℝ*.
+3) Déterminer le signe de g(x) - f(x) sur ]0; +∞[.</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(7)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-7">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> f(x) = x² : décroissante sur [-3; 0], croissante sur [0; 3], minimum en 0 (f(0)=0)</pre>
+  <pre><strong>2)</strong> x² = 1/x → x³ = 1 → x = 1. S = {1}</pre>
+  <pre><strong>3)</strong> g(x) - f(x) = 1/x - x² = (1 - x³)/x
+Sur ]0; 1[ : 1 - x³ &gt; 0 et x &gt; 0 → positif
+Sur ]1; +∞[ : 1 - x³ &lt; 0 et x &gt; 0 → négatif
+En x = 1 : nul</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 8 : Algorithmique – Boucle et condition <span class="difficulte">★★☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>On considère l'algorithme suivant :
+
+  n ← 0
+  Tant que n² &lt; 100 faire
+    n ← n + 1
+  Fin Tant que
+  Afficher n
+
+1) Quelle valeur affiche cet algorithme ? Justifier.
+2) Modifier l'algorithme pour qu'il affiche le plus petit entier n tel que 2ⁿ &gt; 1000.</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(8)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-8">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> L'algorithme cherche le plus petit entier n tel que n² ≥ 100.
+9² = 81 &lt; 100, 10² = 100 ≥ 100.
+L'algorithme affiche 10.</pre>
+  <pre><strong>2)</strong>   n ← 0
+  Tant que 2ⁿ ≤ 1000 faire
+    n ← n + 1
+  Fin Tant que
+  Afficher n
+  (Réponse : n = 10 car 2⁹ = 512 et 2¹⁰ = 1024)</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 9 : Trigonométrie – Cosinus et sinus <span class="difficulte">★★☆</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>Dans un triangle rectangle ABC, rectangle en A, on a AB = 6 cm et AC = 8 cm.
+1) Calculer BC.
+2) Calculer cos(B̂) et sin(B̂).
+3) En déduire la mesure de l'angle B̂ (arrondie au degré).</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(9)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-9">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> BC² = AB² + AC² = 36 + 64 = 100 → BC = 10 cm</pre>
+  <pre><strong>2)</strong> cos(B̂) = AB/BC = 6/10 = 0,6
+sin(B̂) = AC/BC = 8/10 = 0,8</pre>
+  <pre><strong>3)</strong> B̂ = arccos(0,6) ≈ 53° (ou arcsin(0,8) ≈ 53°)</pre>
+</div>
+<hr class="separator">
+
+<h2>Exercice 10 : Problème ouvert – Optimisation <span class="difficulte">★★★</span></h2>
+<div class="enonce">
+  <strong>Énoncé :</strong><br>
+  <pre>Un jardinier dispose d'un grillage de 20 mètres pour délimiter un terrain rectangulaire contre un mur (il n'a pas besoin de grillage le long du mur).
+1) Exprimer l'aire du terrain en fonction de la longueur x du côté perpendiculaire au mur.
+2) Pour quelle valeur de x l'aire est-elle maximale ?
+3) Quelle est cette aire maximale ?</pre>
+</div>
+<button class="toggle-btn" onclick="toggleCorr(10)">👁️ Afficher / Masquer la correction</button>
+<div class="correction" id="corr-10">
+  <div class="correction-title">✅ Correction :</div>
+  <pre><strong>1)</strong> Si x est la largeur (côtés perpendiculaires au mur), la longueur est 20 - 2x.
+Aire A(x) = x(20 - 2x) = 20x - 2x², avec 0 &lt; x &lt; 10.</pre>
+  <pre><strong>2)</strong> A(x) = -2x² + 20x = -2(x² - 10x) = -2[(x - 5)² - 25] = -2(x - 5)² + 50
+Maximum atteint en x = 5 m (sommet de la parabole).</pre>
+  <pre><strong>3)</strong> Aire maximale = 50 m². Le terrain est un rectangle de 5 m × 10 m.</pre>
+</div>
+<hr class="separator">
+
+<div class="footer">
+  Série d'exercices générée pour la classe de Seconde — Bon courage ! 🍀
+</div>
+
+<script>
+function toggleCorr(n) {
+  var el = document.getElementById('corr-' + n);
+  el.classList.toggle('visible');
+}
+</script>
+
+
+</body></html>
